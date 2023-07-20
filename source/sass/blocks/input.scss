@@ -14,6 +14,14 @@
     background-image: url(../img/search.svg);
     background-repeat: no-repeat;
     background-position: 95% center;
+
+    @include laptop {
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+    }
+
+
   }
 }
 
@@ -24,3 +32,10 @@
   font-style: normal;
   font-weight: 400;
 }
+
+@include laptop {
+  .input--search::placeholder {
+    font-size: 0;
+  }
+}
+

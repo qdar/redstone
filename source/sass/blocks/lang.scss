@@ -1,0 +1,18 @@
+.lang {
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 32%;
+    left: 26px;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+  }
+}

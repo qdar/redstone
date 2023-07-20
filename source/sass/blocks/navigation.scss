@@ -1,6 +1,15 @@
 .navigation {
   color: $white;
 
+  @include laptop {
+    display: flex;
+    gap: 80px;
+  }
+
+  @include desktop {
+    gap: 200px;
+  }
+
   & a {
     color: $white;
   }
@@ -8,11 +17,28 @@
   &__top {
     border-bottom: 1px solid #ea6767;
     padding: 25px 20px 30px;
+
+    @include laptop {
+      display: flex;
+      align-items: center;
+      order: 2;
+      padding: 0;
+      border-bottom: 0;
+    }
+
+    @include desktop {
+      width: 280px;
+    }
   }
 
   &__menu {
     padding: 20px 30px;
     border-bottom: 1px solid #ea6767;
+
+    @include laptop {
+      padding: 0;
+      border-bottom: 0;
+    }
   }
 
   &__phone {
@@ -20,11 +46,19 @@
     font-size: 22px;
     padding: 20px 30px;
     border-bottom: 1px solid #ea6767;
+
+    @include laptop {
+      display: none;
+    }
   }
 
   &__address {
     padding: 20px 30px;
     border-bottom: 1px solid #ea6767;
+
+    @include laptop {
+      display: none;
+    }
 
     & dt {
       margin-top: 20px;
@@ -50,6 +84,10 @@
 
     & a {
       text-decoration: underline;
+    }
+
+    @include laptop {
+      display: none;
     }
   }
 }

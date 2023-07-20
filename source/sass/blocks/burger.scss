@@ -38,7 +38,14 @@
     transform: translate(-50%, 0%) rotate(-45deg);
   }
 
-  &__panel {
+  @include laptop {
+      display: none;
+  }
+
+}
+
+@include mobile-tablet-only {
+  .burger__panel {
     position: fixed;
     top: 0;
     right: 0;
@@ -46,13 +53,14 @@
     height: 100%;
     background: $accent-color;
     transform: translateX(100%);
-    transition: transform 0.5s;
+    transition: $transition;
     box-sizing: border-box;
     overflow-y: scroll;
+    z-index: 1;
   }
 
-  &__panel.active {
+  .burger__panel.active {
     transform: translateX(0);
   }
-
 }
+
