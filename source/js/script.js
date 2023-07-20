@@ -1,11 +1,11 @@
-let menu    = document.querySelector('.burger');
-let burger  = document.querySelectorAll('.js-burger');
-let i;
-for (i = 0; i < burger.length; i++) {
-  burger[i].onclick = function() {
-    menu.classList.toggle("burger--open");
-  }
-};
+let burger = document.querySelector('.js-burger');
+let menu = document.querySelector('.burger__panel');
+
+burger.addEventListener('click', function(){
+	burger.classList.toggle('burger--open');
+	menu.classList.toggle('active');
+})
+
 
 let acc = document.getElementsByClassName("tab__button");
 for (i = 0; i < acc.length; i++) {
