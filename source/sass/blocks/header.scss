@@ -5,10 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: 0 15px;
 
     @include laptop {
       height: 100px;
+      margin: 0 30px;
     }
   }
 }

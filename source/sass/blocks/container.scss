@@ -6,4 +6,8 @@
     max-width: 1320px;
     padding: 0 5px;
   }
+
+  @include desktop {
+    min-width: 1512px;
+  }
 }

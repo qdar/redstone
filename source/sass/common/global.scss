@@ -75,3 +75,28 @@ button {
   margin: 0;
   list-style-type: none;
 }
+
+.main-phone {
+  color: $white;
+  font-size: 22px;
+}
+
+.address {
+  color: $white;
+  display: grid;
+  gap: 20px;
+
+  &__item {
+    display: grid;
+    gap: 14px;
+
+    @include laptop {
+      width: 280px;
+    }
+  }
+
+  @include laptop {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+}

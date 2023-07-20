@@ -10,12 +10,8 @@
     gap: 200px;
   }
 
-  & a {
-    color: $white;
-  }
-
   &__top {
-    border-bottom: 1px solid #ea6767;
+    border-bottom: 1px solid $accent-red;
     padding: 25px 20px 30px;
 
     @include laptop {
@@ -33,7 +29,7 @@
 
   &__menu {
     padding: 20px 30px;
-    border-bottom: 1px solid #ea6767;
+    border-bottom: 1px solid $accent-red;
 
     @include laptop {
       padding: 0;
@@ -43,9 +39,8 @@
 
   &__phone {
     display: block;
-    font-size: 22px;
     padding: 20px 30px;
-    border-bottom: 1px solid #ea6767;
+    border-bottom: 1px solid $accent-red;
 
     @include laptop {
       display: none;
@@ -54,37 +49,15 @@
 
   &__address {
     padding: 20px 30px;
-    border-bottom: 1px solid #ea6767;
+    border-bottom: 1px solid $accent-red;
 
     @include laptop {
       display: none;
     }
-
-    & dt {
-      margin-top: 20px;
-      margin-bottom: 14px;
-    }
-
-    & dt:first-child {
-      margin-top: 0;
-    }
-
-    & dl {
-      margin: 0;
-    }
-
-    & dd {
-      margin-left: 0;
-    }
   }
 
   &__copyright {
-    font-size: 15px;
     padding: 20px 30px;
-
-    & a {
-      text-decoration: underline;
-    }
 
     @include laptop {
       display: none;
