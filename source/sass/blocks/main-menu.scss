@@ -1,0 +1,8 @@
+.main-menu {
+  display: grid;
+  gap: 15px;
+
+  &__link {
+    color: $white;
+  }
+}

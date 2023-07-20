@@ -1,0 +1,55 @@
+.navigation {
+  color: $white;
+
+  & a {
+    color: $white;
+  }
+
+  &__top {
+    border-bottom: 1px solid #ea6767;
+    padding: 25px 20px 30px;
+  }
+
+  &__menu {
+    padding: 20px 30px;
+    border-bottom: 1px solid #ea6767;
+  }
+
+  &__phone {
+    display: block;
+    font-size: 22px;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ea6767;
+  }
+
+  &__address {
+    padding: 20px 30px;
+    border-bottom: 1px solid #ea6767;
+
+    & dt {
+      margin-top: 20px;
+      margin-bottom: 14px;
+    }
+
+    & dt:first-child {
+      margin-top: 0;
+    }
+
+    & dl {
+      margin: 0;
+    }
+
+    & dd {
+      margin-left: 0;
+    }
+  }
+
+  &__copyright {
+    font-size: 15px;
+    padding: 20px 30px;
+
+    & a {
+      text-decoration: underline;
+    }
+  }
+}
