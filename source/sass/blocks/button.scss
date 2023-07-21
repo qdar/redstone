@@ -1,0 +1,22 @@
+.button {
+  color: $white;
+  background-color: $accent-color;
+  backdrop-filter: blur(16px);
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  font-weight: 700;
+
+  @include laptop {
+    max-width: 372px;
+    height: 136px;
+  }
+
+  &--primary {
+    color: $accent-color;
+    background-color: $white;
+  }
+}

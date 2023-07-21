@@ -7,6 +7,10 @@
   backdrop-filter: blur(15.5px);
   box-sizing: border-box;
 
+  @include laptop {
+    height: 75px;
+  }
+
   &--search {
     height: 44px;
     border-radius: 13px;
