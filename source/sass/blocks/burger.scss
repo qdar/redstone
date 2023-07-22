@@ -2,7 +2,7 @@
 	width: 32px;
 	height: 32px;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	overflow: hidden;
 
   & span {
@@ -56,7 +56,7 @@
     transition: $transition;
     box-sizing: border-box;
     overflow-y: scroll;
-    z-index: 1;
+    z-index: 2;
   }
 
   .burger__panel.active {

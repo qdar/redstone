@@ -1,0 +1,55 @@
+.about {
+  padding-top: $padding-mobile;
+  background-color: $accent-color;
+  position: relative;
+  z-index: 1;
+
+  @include laptop {
+    padding-top: $padding-pc;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 380px;
+    background-color: $white;
+    z-index: -1;
+
+    @include laptop {
+      height: 230px;
+      border-top: 12px solid $bg-color;
+      border-left: 12px solid $bg-color;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 40px;
+    @include title;
+    margin-bottom: 25px;
+
+    @include laptop {
+      font-size: 80px;
+      line-height: 91%;
+      letter-spacing: 3.2px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__content {
+    color: $white;
+    font-size: 15px;
+    line-height: 160%;
+
+    @include laptop {
+      font-size: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+}
