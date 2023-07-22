@@ -9,6 +9,8 @@
 
   @include laptop {
     background-image: url(../img/map-desktop.jpg);
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
   }
 
   &::before {
@@ -25,11 +27,6 @@
       top: 30%;
       left: calc(65% - 190px);
     }
-  }
-
-  @include laptop {
-    padding-top: $padding-pc;
-    padding-bottom: $padding-pc;
   }
 
   &__title {

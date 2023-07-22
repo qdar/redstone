@@ -10,4 +10,16 @@
   @include desktop {
     min-width: 1512px;
   }
+
+  &--wide {
+    margin: 0 12px;
+
+    @include laptop {
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      min-width: 1760px;
+    }
+  }
 }
