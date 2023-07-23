@@ -1,0 +1,74 @@
+.hero {
+  padding-top: 55px;
+  padding-bottom: 50px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: -300px;
+    width: 606px;
+    height: 606px;
+    background-image: url(../img/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.3;
+
+    @include laptop {
+      background-size: contain;
+      background-image: url(../img/bg-intouch.svg);
+    }
+  }
+
+  &__container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__list {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 28px;
+  }
+
+  &__item {
+    color: $white;
+    font-family: 'Oxygen', 'Tahoma', serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 91%;
+    letter-spacing: 1.925px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  &__item:first-child {
+    margin-left: 10%;
+    z-index: 0;
+  }
+
+  &__item:last-child {
+    display: grid;
+    justify-content: end;
+  }
+
+  &__intro {
+    color: $white;
+    font-size: 20px;
+    font-weight: 300;
+    width: 210px;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    top: 25px;
+    right: -100px;
+    z-index: 0;
+  }
+
+  &__button {
+    margin-top: 100px;
+  }
+}

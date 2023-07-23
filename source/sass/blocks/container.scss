@@ -1,10 +1,9 @@
 .container {
-  margin: 0 15px;
+  padding: 0 15px;
 
   @include laptop {
     margin: 0 auto;
     max-width: 1320px;
-    padding: 0 5px;
   }
 
   @include desktop {
@@ -12,11 +11,7 @@
   }
 
   &--wide {
-    margin: 0 12px;
-
-    @include laptop {
-      margin: 0 auto;
-    }
+    padding: 0 12px;
 
     @include desktop {
       min-width: 1760px;

@@ -6,6 +6,7 @@
   background-position: bottom;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 
   @include laptop {
     background-image: url(../img/map-desktop.jpg);
