@@ -3,7 +3,7 @@
   padding-bottom: 50px;
   position: relative;
 
-  @include laptop {
+  @include desktop {
     padding-top: 112px;
     padding-bottom: 266px;
   }

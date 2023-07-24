@@ -1,0 +1,23 @@
+.industries {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+
+  @include laptop {
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 40px;
+    @include title;
+    margin-bottom: 25px;
+
+    @include laptop {
+      font-size: 80px;
+      line-height: 91%;
+      letter-spacing: 3.2px;
+      margin-bottom: 96px;
+    }
+  }
+}

@@ -3,6 +3,11 @@
   padding-bottom: $padding-mobile;
   overflow: hidden;
 
+  @include laptop {
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
+  }
+
   &__title {
     color: $white;
     font-size: 40px;
