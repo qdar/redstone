@@ -7,6 +7,34 @@ burger.addEventListener('click', function(){
 })
 
 
+const swiper = new Swiper('.partners__slider', {
+  // loop: true,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  // centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 60,
+      // centeredSlides: false,
+    },
+  },
+});
+
+
 let acc = document.getElementsByClassName("tab__button");
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {

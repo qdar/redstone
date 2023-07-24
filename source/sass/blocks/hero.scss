@@ -3,6 +3,11 @@
   padding-bottom: 50px;
   position: relative;
 
+  @include laptop {
+    padding-top: 112px;
+    padding-bottom: 266px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -13,23 +18,38 @@
     background-image: url(../img/bg-hero-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.3;
+    opacity: 0.6;
 
     @include laptop {
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-size: contain;
-      background-image: url(../img/bg-intouch.svg);
+      background-image: url(../img/bg-hero.svg);
     }
   }
 
   &__container {
     position: relative;
     overflow: hidden;
+
+    @include laptop {
+      overflow: inherit;
+      display: grid;
+      grid-template-columns: 3fr 0fr 1fr;
+      align-items: center;
+    }
   }
 
   &__list {
     display: grid;
     gap: 15px;
     margin-bottom: 28px;
+
+    @include laptop {
+      gap: 56px;
+    }
   }
 
   &__item {
@@ -41,6 +61,16 @@
     letter-spacing: 1.925px;
     text-transform: uppercase;
     z-index: 1;
+
+    @include laptop {
+      font-size: 180px;
+      letter-spacing: 7.2px;
+    }
+
+    @include desktop {
+      font-size: 206px;
+      letter-spacing: 7.2px;
+    }
   }
 
   &__item:first-child {
@@ -59,13 +89,38 @@
     font-weight: 300;
     width: 210px;
     position: relative;
+
+    @include laptop {
+      position: absolute;
+      right: 38%;
+      font-size: 28px;
+      width: 245px;
+      line-height: 138%;
+    }
+
+    @include desktop {
+      right: 48%;
+    }
   }
 
   &__image {
+    width: 302px;
     position: absolute;
     top: 25px;
     right: -100px;
     z-index: 0;
+
+    @include laptop {
+      width: 680px;
+      right: 0;
+      top: -30px;
+    }
+
+    @include desktop {
+      width: 900px;
+      right: 40px;
+      top: -30px;
+    }
   }
 
   &__button {

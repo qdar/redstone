@@ -1,0 +1,65 @@
+.partners {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  overflow: hidden;
+
+  &__title {
+    color: $white;
+    font-size: 40px;
+    @include title;
+    margin-bottom: 25px;
+
+    @include laptop {
+      font-size: 80px;
+      line-height: 91%;
+      letter-spacing: 3.2px;
+      margin-bottom: 96px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    height: auto;
+    padding-bottom: 46px;
+    width: calc(50% + 50vw);
+  }
+
+  &__item {
+    border: 1px solid rgba(211, 211, 211, 0.25);
+    background: #252424;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include laptop {
+      width: 256px!important;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @include laptop {
+      display: flex;
+      top: -146px;
+      margin: 0;
+    }
+  }
+
+  &__slider {
+    margin-left: 12px;
+    padding-right: 130px;
+
+    @include laptop {
+      margin: 0 auto;
+      max-width: 1320px;
+      padding-right: 0;
+      overflow: initial;
+    }
+
+    @include desktop {
+      min-width: 1512px
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.swiper-button-next,
+.swiper-button-prev {
+  width: 69px;
+  height: 46px;
+  background-color: rgb(217 217 217 / 10%);
+  border-radius: 32px;
+}
+
+.swiper-button-prev {
+  right: 100px;
+  left: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px;
+  color: #c1c1c1;
+}
+
+.swiper-pagination-bullets {
+  bottom: 0
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: $gray;
+  margin: 0 10px!important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 53px;
+  background-color: $accent-red;
+  border-radius: 10px;
+}
+
+@include laptop {
+  .swiper-pagination {
+    display: none;
+  }
+}
