@@ -21,15 +21,28 @@ const swiper = new Swiper('.partners__slider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 15,
-
-    },
     1024: {
       slidesPerView: 5,
       spaceBetween: 60,
-      // centeredSlides: false,
+    },
+  },
+});
+
+const swiperSolutions = new Swiper('.solutions__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
   },
 });

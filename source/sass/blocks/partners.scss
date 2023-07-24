@@ -22,11 +22,13 @@
     }
   }
 
-  &__list {
-    width: 100%;
-    height: auto;
-    padding-bottom: 46px;
-    width: calc(50% + 50vw);
+  &__slider {
+    margin-left: 12px;
+    padding-right: 130px;
+
+    @include laptop {
+      padding-right: 0;
+    }
   }
 
   &__item {
@@ -49,22 +51,6 @@
       display: flex;
       top: -146px;
       margin: 0;
-    }
-  }
-
-  &__slider {
-    margin-left: 12px;
-    padding-right: 130px;
-
-    @include laptop {
-      margin: 0 auto;
-      max-width: 1320px;
-      padding-right: 0;
-      overflow: initial;
-    }
-
-    @include desktop {
-      min-width: 1512px
     }
   }
 }

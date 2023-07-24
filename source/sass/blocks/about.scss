@@ -52,4 +52,13 @@
       gap: 30px;
     }
   }
+
+  &__content p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__content p {
+    margin-bottom: 0;
+  }
 }

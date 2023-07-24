@@ -64,4 +64,76 @@
       margin-top: 40px;
     }
   }
+
+  &__text p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__text p {
+    margin: 0;
+  }
+
+  &__navigation {
+    display: none;
+
+    @include laptop {
+      display: flex;
+      top: -100px;
+      margin: 0;
+    }
+  }
+
+  &__slider .swiper-button-next,
+  &__slider .swiper-button-prev {
+    background-color: transparent;
+    border: 1px solid rgba(211, 211, 211, 1);
+  }
+
+  &__slider .swiper-button-prev:after,
+  &__slider .swiper-button-next:after {
+    color: rgba(142, 142, 142, 1);
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    line-height: normal;
+
+    @include laptop {
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @include laptop {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    color: $accent-color;
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 22px;
+    background-image: url(../img/solution-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
 }

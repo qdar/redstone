@@ -205,7 +205,27 @@
         </div>
         <div class="solutions__content tabs__content" data-tabs="content">
           <div class="tabs__element" data-tabs="element">
-            <p>001</p>
+            <div class="swiper solutions__slider slider">
+              <ul class="clear-list solutions__list swiper-wrapper">
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">Active Directory protection (Domain controller)</p>
+                  <p class="solutions__desc">We advise to create AD once you’ve overcome 20 employees. Even if you are not a big company yet we strongly recommend to think of having Active Directory arranged as a digital directory that keeps track of who has access to what.</p>
+                  <button class="solutions__link" type="button" data-open-modal="modal-1">More</button>
+                </li>
+
+
+
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="solutions__navigation swiper-button-prev"></div>
+              <div class="solutions__navigation swiper-button-next"></div>
+            </div>
           </div>
           <div class="tabs__element" data-tabs="element">
             <p>002</p>
@@ -240,28 +260,28 @@
     </div>
     <div class="swiper partners__slider slider">
       <ul class="clear-list partners__list swiper-wrapper">
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-a.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-b.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-c.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-d.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-e.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-a.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-b.svg" alt="">
         </li>
-        <li class="partners__item swiper-slide">
+        <li class="partners__item slider__item swiper-slide">
           <img src="img/logo-c.svg" alt="">
         </li>
       </ul>
@@ -314,7 +334,7 @@
 
   <footer class="footer">
     <div class="footer__container container">
-      <img class="footer__logo" src="img/logo.svg" height="28" alt="red stone">
+      <img class="footer__logo" src="img/logo.svg" height="24" alt="red stone">
       <address class="footer__address">
         <ul class="clear-list address">
           <li class="address__item">
@@ -339,8 +359,31 @@
     </div>
   </footer>
 
+
+
+  <section class="modal modal--preload" data-modal="modal-1">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section>
+          <h2 class="subtitle">example-1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloremque asperiores amet neque quam architecto sequi voluptatum odio laudantium earum sit voluptas ipsam eius praesentium, rem, aliquam dolores porro. Tenetur.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloremque asperiores amet neque quam architecto sequi voluptatum odio laudantium earum sit voluptas ipsam eius praesentium, rem, aliquam dolores porro. Tenetur.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloremque asperiores amet neque quam architecto sequi voluptatum odio laudantium earum sit voluptas ipsam eius praesentium, rem, aliquam dolores porro. Tenetur.</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
   <script src="js/swiper-bundle.min.js"></script>
   <script type="module" src="js/module-tabs.js"></script>
+  <script type="module" src="js/module-modal.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

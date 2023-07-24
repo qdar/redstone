@@ -9,6 +9,8 @@
   width: 100%;
   height: 65px;
   font-weight: 700;
+  cursor: pointer;
+  transition: $transition;
 
   @include laptop {
     max-width: 372px;
@@ -18,5 +20,45 @@
   &--primary {
     color: $accent-color;
     background-color: $white;
+  }
+
+  &--secondary {
+    color: $accent-color;
+    background-color: $white;
+
+    @include mobile-tablet-only {
+      justify-content: start;
+      height: auto;
+    }
+
+    @include laptop {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  &:hover {
+    background: #F83535;
+  }
+
+  &:active {
+    background: $accent-color;
+  }
+
+  &--primary:hover {
+    background: #FFE9E9;
+  }
+
+  &--primary:active {
+    background: $white;
+  }
+
+  &--secondary:hover {
+    background-color: $white;
+    border: 1px solid #F83535;
+  }
+
+  &--secondary:active {
+    background: $white;
+    border: 1px solid $accent-color;
   }
 }

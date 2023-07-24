@@ -83,10 +83,15 @@
     margin-top: 32px;
     position: relative;
     padding-left: 36px;
+    transition: $transition;
 
     @include laptop {
       margin-top: 40px;
     }
+  }
+
+  &__pdf:hover {
+    color: $white;
   }
 
   &__pdf::before {
@@ -98,5 +103,9 @@
     background-image: url(../img/pdf.svg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &__pdf::before:hover {
+    background-image: url(../img/pdf-hover.svg);
   }
 }
