@@ -74,6 +74,19 @@ const swiperSolutions = new Swiper('.solutions__slider', {
   },
 });
 
+const swiperCredentials = new Swiper('.credentials__slider', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 
 let acc = document.getElementsByClassName("tab__button");
 for (i = 0; i < acc.length; i++) {
