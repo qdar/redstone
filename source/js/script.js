@@ -6,6 +6,33 @@ burger.addEventListener('click', function(){
 	menu.classList.toggle('active');
 })
 
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href').substr(1)
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("header--sticky");
+  } else {
+    header.classList.remove("header--sticky");
+  }
+}
+
 
 const swiper = new Swiper('.partners__slider', {
   // loop: true,

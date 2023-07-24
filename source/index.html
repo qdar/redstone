@@ -15,7 +15,7 @@
   <link rel="preload" href="/fonts/Oxygen-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="myHeader">
     <div class="header__container">
       <img class="header__logo" src="img/logo.svg" height="28" alt="red stone">
       <div class="header__lang lang">
@@ -35,25 +35,25 @@
         </div>
         <ul class="clear-list navigation__menu header__menu main-menu">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Industries</a>
+            <a class="main-menu__link" href="#industries">Industries</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">About us</a>
+            <a class="main-menu__link" href="#about">About us</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Solutions & Services</a>
+            <a class="main-menu__link" href="#solutions">Solutions & Services</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Partners</a>
+            <a class="main-menu__link" href="#partners">Partners</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Credentials</a>
+            <a class="main-menu__link" href="#credentials">Credentials</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Partners</a>
+            <a class="main-menu__link" href="#partners">Partners</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Contacts</a>
+            <a class="main-menu__link" href="#contacts">Contacts</a>
           </li>
         </ul>
         <a class="navigation__phone main-phone" href="tel:+7965458548">+7 965 458 548</a>
@@ -98,7 +98,7 @@
     </div>
   </section>
 
-  <section class="industries">
+  <section class="industries" id="industries">
     <div class="industries__container container">
       <h2 class="industries__title">Industries</h2>
 
@@ -128,7 +128,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container about__container">
       <h2 class="about__title">About us</h2>
       <div class="about__content">
@@ -186,7 +186,7 @@
     </div>
   </section>
 
-  <section class="solutions">
+  <section class="solutions" id="solutions">
     <div class="solutions__container container">
       <h2 class="solutions__title">Solutions & Services</h2>
       <div class="solutions__text">
@@ -216,11 +216,140 @@
                   </picture>
                   <p class="solutions__name">Active Directory protection (Domain controller)</p>
                   <p class="solutions__desc">We advise to create AD once you’ve overcome 20 employees. Even if you are not a big company yet we strongly recommend to think of having Active Directory arranged as a digital directory that keeps track of who has access to what.</p>
-                  <button class="solutions__link" type="button" data-open-modal="modal-1">More</button>
+                  <button class="solutions__link" type="button" data-open-modal="solution-1">More</button>
                 </li>
-
-
-
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">Antiviruses and anti-APT (Advance Persistent Threat) – EDR (End Point Detection & Response) – XDR (Extended Detection & Response)</p>
+                  <p class="solutions__desc">Can be launched decentralized - per user or can have centralized management - to be used per server. These helps to protect both end-points and servers, to resist malware, ransomware and APT threats.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-2">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">Firewalls - NGFW (Next Generation Firewalls)</p>
+                  <p class="solutions__desc">Set between Internet and internal networks. Firewall set-up is essentially important and nearly useless without proper policies configured, applied and constantly tracked and updated.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-3">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">Sandbox</p>
+                  <p class="solutions__desc">The second biggest vulnerability – mail!. This type of protection is a complete emulation of the work station - all traffic is transferred.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-4">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">Mail Security Gateway</p>
+                  <p class="solutions__desc">A mail security gateway is like a security checkpoint for emails. It helps protect organizations from various email-based threats and ensures the safe delivery of messages.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-5">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">DLP (Data Loss Prevention)</p>
+                  <p class="solutions__desc">Protects companies’ sensitive data against leakage and theft, very flexible set-up, controls all data channels, complete control of users’ behavior, USB ports control, control of any resource - messengers inclusively, allows to see the content of messages/emails etc.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-6">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">WAF (Web Application Firewall)</p>
+                  <p class="solutions__desc">WAF security gateway acts as a protective barrier for websites, shielding them from cyber attacks and ensuring the integrity and security of web-based applications.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-7">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">NAC (Network Access Control)</p>
+                  <p class="solutions__desc">NAC helps organizations maintain a secure and controlled network environment. It ensures that only trusted devices and authorized users can connect, protecting against unauthorized access, potential threats, and the spread of malware.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-8">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">MDM (Mobile Device Management)</p>
+                  <p class="solutions__desc">MDM helps organizations keep their mobile devices under control and secure. It simplifies the management of devices, enhances data protection, and ensures that devices are compliant with security policies.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-9">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">SSO (Single Sign On)</p>
+                  <p class="solutions__desc">The technology is like having a master key for multiple locked doors. It allows to access multiple systems, applications, or websites with just one set of login credentials.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-10">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">MFA (Multi Factor Authentication)</p>
+                  <p class="solutions__desc">MFA adds an extra layer of security by requiring users to provide multiple forms of authentication to access their accounts.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-11">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">SIEM (Security Information & Event Management)</p>
+                  <p class="solutions__desc">SIEM collects data from diverse sources, including firewall logs, antivirus logs, authentication logs, and intrusion detection system logs, among others. </p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-12">More</button>
+                </li>
+                <li class="solutions__item slider__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
+                    <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/solution-image-pc.jpg 1x, img/solution-image-pc@2x.jpg 2x">
+                    <img src="img/solution-image.jpg" srcset="img/solution-image@2x.jpg 2x" loading="lazy" alt="Solution">
+                  </picture>
+                  <p class="solutions__name">SOC (Security Operations Center)</p>
+                  <p class="solutions__desc">Essentially required for big enterprises with distributed network – extended SIEM with analytics on board.</p>
+                  <button class="solutions__link" type="button" data-open-modal="solution-13">More</button>
+                </li>
               </ul>
               <div class="swiper-pagination"></div>
               <div class="solutions__navigation swiper-button-prev"></div>
@@ -254,7 +383,7 @@
     </div>
   </section>
 
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="partners__container container">
       <h2 class="partners__title">Partners</h2>
     </div>
@@ -291,7 +420,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contacts">
     <div class="container contact__container">
       <h2 class="contact__title">Contacts</h2>
       <article class="contact__information">
@@ -361,15 +490,265 @@
 
 
 
-  <section class="modal modal--preload" data-modal="modal-1">
+  <section class="modal modal--preload" data-modal="solution-1">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal="data-close-modal"></div>
       <div class="modal__content">
-        <section>
-          <h2 class="subtitle">example-1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloremque asperiores amet neque quam architecto sequi voluptatum odio laudantium earum sit voluptas ipsam eius praesentium, rem, aliquam dolores porro. Tenetur.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloremque asperiores amet neque quam architecto sequi voluptatum odio laudantium earum sit voluptas ipsam eius praesentium, rem, aliquam dolores porro. Tenetur.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloremque asperiores amet neque quam architecto sequi voluptatum odio laudantium earum sit voluptas ipsam eius praesentium, rem, aliquam dolores porro. Tenetur.</p>
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">Active Directory protection (Domain controller)</h2>
+          <p>We advise to create AD once you’ve overcome 20 employees</p>
+          <p>Even if you are not a big company yet we strongly recommend to think of having Active Directory arranged as a digital directory that keeps track of who has access to what. It stores information about users (employees), including their names, passwords, and what they are allowed to do on the network. It also keeps track of computers and servers, their configurations, and the software installed on them.</p>
+          <p>By using Active Directory, organizations can make it easier for users to log in to their computers and access resources on the network. It simplifies the process of managing user accounts, ensuring that only authorized people can access specific files, folders, or applications.</p>
+          <p>In simple terms, Active Directory acts as a central control system that helps keep everything organized, secure, and running smoothly within a network.</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-2">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">Antiviruses and anti-APT (Advance Persistent Threat) – EDR (End Point Detection & Response) – XDR (Extended Detection & Response)</h2>
+          <p>Can be launched decentralized - per user or can have centralized management - to be used per server</p>
+          <p>These helps to protect both end-points and servers, to resist malware, ransomware and APT threats</p>
+          <p>These solutions should be well tuned and constantly monitored to ensure everything is up to date- it’s not enough just to buy it to use from the box</p>
+          <p>Modern anti-virus solutions allow not only fight against threats but as well perform SW assets’ identification, patch management, vulnerability management, WEB filtering, anti-spam, removable media control and restrictions - all in one</p>
+
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-3">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">Firewalls - NGFW (Next Generation Firewalls)</h2>
+          <p>Set between Internet and internal networks</p>
+          <p>Firewall set-up is essentially important and nearly useless without proper policies configured, applied and constantly tracked and updated</p>
+          <p>Firewall is a core security solution for the networking assuring:</p>
+          <ul>
+            <li>Packet Filtering</li>
+            <li>Packet Filtering</li>
+            <li>Intrusion Prevention System (IPS)</li>
+            <li>Application Awareness and Control</li>
+            <li>Deep Packet Inspection (DPI)</li>
+            <li>Virtual Private Network (VPN) Support</li>
+            <li>Web Filtering</li>
+            <li>Advanced Threat Protection</li>
+            <li>Centralized Management and Reporting </li>
+          </ul>
+          <p>It’s a consulting job RS has deepest expertise in with all vendors</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-4">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">Sandbox</h2>
+          <p>The second biggest vulnerability – mail!</p>
+          <p>This type of protection is a complete emulation of the work station - all traffic is transferred through the sandbox, if contamination happens the sandbox collapses</p>
+          <p>Correctly set-up and trained sandbox can mitigate up to 100% of the fishing threats!</p>
+          <p>!! it is essential to train the staff against fishing – essential practical appliance to Sandbox !!</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-5">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">Mail Security Gateway</h2>
+          <p>A mail security gateway is like a security checkpoint for emails. It helps protect organizations from various email-based threats and ensures the safe delivery of messages. This gateway acts as a filter, scanning incoming and outgoing emails for potential risks and enforcing security measures to safeguard against malicious content, spam, phishing attempts, and malware.</p>
+          <p>In simpler terms, a mail security gateway acts as a shield for your email system. It checks each email that enters or leaves your organization to identify and block harmful or unwanted messages. By doing so, it helps prevent security breaches, keeps sensitive information safe, and reduces the risk of falling victim to email-based attacks.</p>
+          <p>As phishing becomes one of the most frequent threats every company should protect their mail at first place.</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-6">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">DLP (Data Loss Prevention)</h2>
+          <p>Protects companies’ sensitive data against leakage and theft, very flexible set-up, controls all data channels, complete control of users’ behavior, USB ports control, control of any resource - messengers inclusively, allows to see the content of messages/emails etc., allows to track users entering unusual apps and/or unusual or confidential data and much more!</p>
+          <p>Requires very professional set-up to cover all existing communication channel used by your company! </p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-7">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">WAF (Web Application Firewall)</h2>
+          <p>WAF security gateway acts as a protective barrier for websites, shielding them from cyber attacks and ensuring the integrity and security of web-based applications. It helps keep sensitive data safe, maintains the availability of the website, and safeguards against various types of web-based threats.</p>
+          <p>WAF is installed on the border with WEB applications (company’s app, bank-client, web-portal, web-app, company’s site, user’s cabinet, B2B portal etc.) – resource consuming solution needs to be well set-up to combine smooth user experience and protection.</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-8">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">NAC (Network Access Control)</h2>
+          <p>NAC helps organizations maintain a secure and controlled network environment. It ensures that only trusted devices and authorized users can connect, protecting against unauthorized access, potential threats, and the spread of malware. NAC adds an extra layer of security to prevent unauthorized entry and maintain the integrity of the network</p>
+          <p>NAC physically detects who’s plugged to which port, rules can be set-up to prevent intervention</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-9">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">MDM (Mobile Device Management)</h2>
+          <p>MDM helps organizations keep their mobile devices under control and secure. It simplifies the management of devices, enhances data protection, and ensures that devices are compliant with security policies. MDM provides administrators with the tools they need to manage, secure, and monitor mobile devices efficiently.</p>
+          <p>Administrators can perform tasks like remotely wiping or locking a device if it is lost or stolen, ensuring that sensitive data remains secure. They can also push software updates, enforce password policies, and control access to corporate resource</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-10">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">SSO (Single Sign On)</h2>
+          <p>The technology is like having a master key for multiple locked doors. It allows to access multiple systems, applications, or websites with just one set of login credentials. Instead of remembering and entering separate usernames and passwords for each service, SSO enables to log in once and gain access to multiple resources seamlessly.</p>
+          <p>SSO simplifies the login process, saves time, and reduces the hassle of remembering multiple usernames and passwords. It also enhances security because it is not needed to store or remember passwords for each individual service, reducing the risk of using weak or easily guessable passwords. Assures entrance on a single time multifactor authorization while all PWDs of the user are stored safely in OSS and even if OSS is hacked PWDs are almost 100% not possible to discover/ use</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-11">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">MFA (Multi Factor Authentication)</h2>
+          <p>MFA adds an extra layer of security by requiring users to provide multiple forms of authentication to access their accounts. Instead of relying solely on a password, MFA combines something the user knows (such as a password) with something the user possesses (such as a physical device or token) or something inherent to the user (such as a biometric characteristic)</p>
+          <p>Multi-Factor Authentication is a vital security measure that significantly strengthens the protection of online accounts and sensitive information. By requiring multiple forms of authentication, MFA mitigates the risks associated with password-related vulnerabilities and enhances overall security posture. Implementing MFA demonstrates a commitment to cybersecurity and plays a crucial role in safeguarding against unauthorized access and potential data breaches</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-12">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">SIEM (Security Information & Event Management)</h2>
+          <p>Crowning cyber resilience solution.</p>
+          <p>SIEM collects data from diverse sources, including firewall logs, antivirus logs, authentication logs, and intrusion detection system logs, among others. By aggregating this information, SIEM provides a comprehensive view of the organization's security posture, helping identify and prioritize security incidents</p>
+          <p>The tool helps organizations to monitor their digital environment for signs of potential threats or security breaches. It collects and analyzes data from various sources, allowing security teams to detect and respond to incidents promptly. SIEM enhances the overall security of an organization by providing insights into potential risks and enabling proactive incident management.</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--preload" data-modal="solution-13">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">SOC (Security Operations Center)</h2>
+          <p>Essentially required for big enterprises with distributed network – extended SIEM with analytics on board.</p>
+          <p>Security Operations Center (SOC) is like a command center for cybersecurity. It serves as a dedicated facility or team within an organization that monitors, detects, analyzes, and responds to security incidents and threats.</p>
+          <p>RS can help you to either organize your own SOC on premise or provide it as a service.</p>
         </section>
         <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
           <span class="visually-hidden">Закрыть</span>

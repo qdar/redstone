@@ -4,6 +4,11 @@
 
   &__link {
     color: $white;
+    transition: $transition;
+  }
+
+  &__link:hover {
+    opacity: 0.8;
   }
 
   @include laptop {
