@@ -11,20 +11,12 @@
   }
 
   &__control {
-    color: $gray;
-    background: $bg-color;
     font-size: 18px;
     padding: 8px 15px;
-    border: 1px solid rgba(211, 211, 211, 0.25);
     flex-shrink: 0;
     height: 45px;
     cursor: pointer;
     transition: $transition;
-
-    &:hover {
-      color: #fff;
-      border: 1px solid $white;
-    }
 
     @include laptop {
       padding: 10px 30px;
@@ -44,13 +36,5 @@
 
   &__element.is-active {
     display: block;
-  }
-
-  &__content {
-    margin-top: 25px;
-
-    @include laptop {
-      margin-top: 90px;
-    }
   }
 }

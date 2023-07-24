@@ -20,4 +20,27 @@
       margin-bottom: 96px;
     }
   }
+
+  &__content {
+    margin-top: 25px;
+
+    @include laptop {
+      margin-top: 90px;
+    }
+  }
+
+  &__tabs .tabs__control {
+    color: $gray;
+    border: 1px solid rgba(211, 211, 211, 0.25);
+  }
+
+  &__tabs .tabs__control:hover {
+    color: #fff;
+    border: 1px solid $white;
+  }
+
+  &__tabs .tabs__control.is-active:hover {
+    color: $white;
+    border: 1px solid $accent-color;
+  }
 }
