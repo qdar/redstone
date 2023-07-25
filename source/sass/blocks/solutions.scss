@@ -79,9 +79,13 @@
 
     @include laptop {
       display: flex;
-      top: -100px;
+      top: -60px;
       margin: 0;
     }
+  }
+
+  &__slider {
+    padding-top: 50px;
   }
 
   &__slider .swiper-button-next,
