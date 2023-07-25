@@ -2,6 +2,7 @@
   padding-top: $padding-mobile;
   padding-bottom: $padding-mobile;
   background-color: $white;
+  overflow: hidden;
 
   @include laptop {
     padding-top: $padding-pc;

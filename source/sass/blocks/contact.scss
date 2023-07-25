@@ -3,7 +3,7 @@
   padding-bottom: $padding-mobile;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -11,7 +11,7 @@
   @include laptop {
     background-image: url(../img/map-desktop.jpg);
     padding-top: $padding-pc;
-    padding-bottom: $padding-pc;
+    padding-bottom: 200px;
   }
 
   &::before {
