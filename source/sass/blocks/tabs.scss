@@ -6,7 +6,10 @@
     overflow-y: scroll;
 
     @include laptop {
+      display: inline-flex;
       gap: 40px;
+      position: relative;
+      z-index: 2;
     }
   }
 

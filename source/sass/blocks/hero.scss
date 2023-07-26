@@ -3,9 +3,14 @@
   padding-bottom: 50px;
   position: relative;
 
+  @include laptop {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
   @include desktop {
-    padding-top: 212px;
-    padding-bottom: 266px;
+    padding-top: 210px;
+    padding-bottom: 230px;
   }
 
   &::before {

@@ -87,6 +87,32 @@ const swiperCredentials = new Swiper('.credentials__slider', {
   },
 });
 
+const swiperIndustries = new Swiper('.industries__slider', {
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  slidesPerColumnFill: 'row',
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+      grid: {
+        rows: 2,
+      },
+    },
+  },
+
+});
 
 let acc = document.getElementsByClassName("tab__button");
 for (i = 0; i < acc.length; i++) {

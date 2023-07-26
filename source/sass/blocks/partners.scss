@@ -46,4 +46,10 @@
       margin: 0;
     }
   }
+
+  &__pagination {
+    @include laptop {
+      display: none;
+    }
+  }
 }

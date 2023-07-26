@@ -40,12 +40,10 @@
 
 .swiper-pagination-bullet-active {
   width: 53px;
-  background-color: $accent-red;
+  background-color: $accent-color;
   border-radius: 10px;
 }
 
-@include laptop {
-  .swiper-pagination {
-    display: none;
-  }
+.swiper-grid-column>.swiper-wrapper {
+  flex-direction: row!important;
 }

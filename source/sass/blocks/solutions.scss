@@ -85,6 +85,12 @@
     }
   }
 
+  &__pagination {
+    @include laptop {
+      display: none;
+    }
+  }
+
   &__slider {
     padding-top: 50px;
   }
