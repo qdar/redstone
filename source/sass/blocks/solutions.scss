@@ -93,6 +93,12 @@
 
   &__slider {
     padding-top: 50px;
+    padding-right: 40px;
+    margin-left: 15px;
+
+    @include laptop {
+      padding-right: 0;
+    }
   }
 
   &__slider .swiper-button-next,
@@ -104,6 +110,10 @@
   &__slider .swiper-button-prev:after,
   &__slider .swiper-button-next:after {
     color: rgba(142, 142, 142, 1);
+  }
+
+  &__slider .swiper-wrapper {
+    padding-bottom: 70px;
   }
 
   &__name {
