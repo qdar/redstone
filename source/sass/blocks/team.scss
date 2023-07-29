@@ -20,19 +20,19 @@
     font-size: 148px;
     position: absolute;
     left: 0;
-    bottom: 49%;
+    bottom: 40.5%;
     opacity: 0.15;
     z-index: -1;
 
     @include laptop {
       font-size: 36em;
-      bottom: 64%;
+      bottom: 72%;
       left: -10%;
     }
 
     @include desktop {
       font-size: 48em;
-      bottom: 54%;
+      bottom: 65%;
       left: -20%;
     }
   }

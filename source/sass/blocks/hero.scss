@@ -63,18 +63,17 @@
     font-size: 55px;
     font-weight: 400;
     line-height: 91%;
-    letter-spacing: 1.925px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 1;
 
     @include laptop {
-      font-size: 180px;
-      letter-spacing: 7.2px;
+      font-size: 170px;
+      letter-spacing: 7px;
     }
 
     @include desktop {
       font-size: 206px;
-      letter-spacing: 7.2px;
     }
   }
 
@@ -97,7 +96,7 @@
 
     @include laptop {
       position: absolute;
-      right: 38%;
+      right: 42%;
       font-size: 28px;
       width: 245px;
       line-height: 138%;

@@ -1,24 +1,30 @@
-let burger = document.querySelector('.js-burger');
-let menu = document.querySelector('.burger__panel');
+let burger  = document.querySelectorAll('.js-burger');
+let menu    = document.querySelector('.burger__panel');
+let burgerButton  = document.querySelector('.burger')
 
-burger.addEventListener('click', function(){
-	burger.classList.toggle('burger--open');
-	menu.classList.toggle('active');
-})
+let i;
+for (i = 0; i < burger.length; i++) {
+  burger[i].onclick = function() {
+    menu.classList.toggle("active");
+    burgerButton.classList.toggle("burger--open");
+  }
+};
 
-const anchors = document.querySelectorAll('a[href*="#"]')
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+// const anchors = document.querySelectorAll('a[href*="#"]')
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
 
-    const blockID = anchor.getAttribute('href').substr(1)
+//     const blockID = anchor.getAttribute('href').substr(1)
 
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     })
+//   })
+// }
+
+let scroll = new SmoothScroll('a[href*="#"]', {speed: 400});
 
 window.onscroll = function() {myFunction()};
 
@@ -32,7 +38,6 @@ function myFunction() {
     header.classList.remove("header--sticky");
   }
 }
-
 
 const swiper = new Swiper('.partners__slider', {
   // loop: true,
@@ -113,16 +118,3 @@ const swiperIndustries = new Swiper('.industries__slider', {
   },
 
 });
-
-let acc = document.getElementsByClassName("tab__button");
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("tab__button--open");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}

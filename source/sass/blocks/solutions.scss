@@ -7,7 +7,6 @@
   @include laptop {
     padding-top: $padding-pc;
     padding-bottom: $padding-pc;
-    border-left: 12px solid $bg-color;
   }
 
   &__title {

@@ -6,7 +6,11 @@
   transition: $transition;
 
   &--sticky {
-    background-color: $bg-color;
+    background-color: rgba(37, 36, 36, 0.75);
+  }
+
+  &--sticky &__container {
+    height: 60px;
   }
 
   &__container {
