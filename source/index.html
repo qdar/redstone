@@ -1536,14 +1536,23 @@
   <section class="intouch">
     <div class="container intouch__container">
       <h2 class="intouch__title">Get in touch</h2>
+      <div class="component-demo__form" data-form-validate="data-form-validate" data-callback="base">
       <form class="intouch__form" action="#" method="post">
         <fieldset class="intouch__inputs">
           <div class="intouch__inputs-group">
-            <input class="intouch__input input" type="text" name="your-name" id="your-name" placeholder="Your name">
-            <input class="intouch__input input" type="tel" name="your-phone" id="your-phone" placeholder="+7 000 000 000">
-            <input class="intouch__input input" type="email" name="your-email" id="your-email" placeholder="E-mail">
+            <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
+              <input class="intouch__input input" type="text" name="your-name" id="your-name" placeholder="Your name" required>
+            </div>
+            <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
+              <input class="intouch__input input" type="tel" name="your-phone" id="your-phone" placeholder="+7 000 000 000" required>
+            </div>
+            <div class="custom-input" data-validate-type="email" data-message-base="The field must be filled in" data-required="data-required">
+              <input class="intouch__input input" type="email" name="your-email" id="your-email" placeholder="E-mail" required>
+            </div>
           </div>
-          <textarea class="intouch__textarea input" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          <div class="custom-textarea" data-validate-type="text" data-limitation="letters-and-digit">
+            <textarea class="intouch__textarea input" name="message" id="message" cols="30" rows="10" placeholder="Your message" minlength="8" maxlength="250"></textarea>
+          </div>
         </fieldset>
         <div class="intouch__buttons">
           <label class="intouch__label policy" for="policy">
@@ -1553,6 +1562,7 @@
           <button class="intouch__button button button--primary" type="submit">Send</button>
         </div>
       </form>
+      </div>
     </div>
   </section>
 
@@ -2347,6 +2357,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script type="module" src="js/module-tabs.js"></script>
   <script type="module" src="js/module-modal.js"></script>
+  <script type="module" src="js/module-validate.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

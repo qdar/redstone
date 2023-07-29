@@ -37,7 +37,11 @@ return gulp.src('source/*.html')
 // Scripts
 
 const scripts = () => {
-return gulp.src('source/js/*.js')
+return gulp.src([
+  'source/js/*.js',
+  'source/js/form-validate/*.js',
+  'source/js/input-file/*.js'
+])
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }
