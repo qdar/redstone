@@ -26,10 +26,19 @@
       margin: 0 30px;
     }
   }
-}
 
-@include laptop {
-  .header__lang {
-    display: none;
+  &__lang {
+    position: relative;
+
+    @include laptop {
+      display: none;
+    }
+
+    & .lang {
+      position: absolute;
+      box-sizing: border-box;
+      top: -16px;
+      left: -14px;
+    }
   }
 }

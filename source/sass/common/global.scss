@@ -88,15 +88,10 @@ fieldset {
 .address {
   color: $white;
   display: grid;
-  gap: 20px;
+  gap: 14px;
 
-  &__item {
-    display: grid;
-    gap: 14px;
-
-    @include laptop {
-      width: 600px;
-    }
+  @include laptop {
+    width: 600px;
   }
 }
 

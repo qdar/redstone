@@ -10,26 +10,36 @@
     gap: 200px;
   }
 
-  &__top {
-    border-bottom: 1px solid $accent-red;
-    padding: 25px 20px 30px;
+  &__lang {
+    padding: 35px 25px;
+    position: relative;
 
     @include laptop {
-      display: flex;
-      align-items: center;
       order: 2;
       padding: 0;
-      border-bottom: 0;
-      width: 40px;
+    }
+
+    & .lang {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+
+      @include laptop {
+        top: -8px;
+        right: 0;
+        left: auto;
+      }
     }
   }
 
   &__menu {
-    padding: 20px 30px;
+    padding: 30px 25px;
+    border-top: 1px solid $accent-red;
     border-bottom: 1px solid $accent-red;
 
     @include laptop {
       padding: 0;
+      border-top: 0;
       border-bottom: 0;
       margin-right: 140px;
     }
@@ -41,7 +51,7 @@
 
   &__contact {
     display: block;
-    padding: 20px 30px;
+    padding: 30px 25px;
     border-bottom: 1px solid $accent-red;
 
     @include laptop {
@@ -50,7 +60,7 @@
   }
 
   &__address {
-    padding: 20px 30px;
+    padding: 30px 25px;
     border-bottom: 1px solid $accent-red;
 
     @include laptop {
@@ -59,7 +69,7 @@
   }
 
   &__copyright {
-    padding: 20px 30px;
+    padding: 30px 25px;
 
     @include laptop {
       display: none;
