@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 15px;
+    transition: $transition;
 
     @include laptop {
       height: 100px;

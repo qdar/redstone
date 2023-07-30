@@ -13,10 +13,14 @@ body {
 }
 
 main {
-  margin-top: calc(66px + 56px);
+  margin-top: 120px;
 
   @include laptop {
-    margin-top: calc(100px + 72px);
+    margin-top: 160px;
+  }
+
+  @include desktop {
+    padding-bottom: 230px;
   }
 }
 
@@ -31,15 +35,6 @@ img {
   height: auto;
   object-fit: contain;
 }
-
-// p:not(:last-child) {
-//   margin-top: 0;
-//   margin-bottom: 16px;
-// }
-
-// p {
-//   margin: 0;
-// }
 
 address {
   font-style: normal;
@@ -67,6 +62,12 @@ ol {
   padding-left: 24px;
 }
 
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,17 +85,6 @@ ol {
   list-style-type: none;
 }
 
-.main-phone {
-  color: $white;
-  font-size: 22px;
-}
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 .address {
   color: $white;
   display: grid;
@@ -105,12 +95,30 @@ fieldset {
     gap: 14px;
 
     @include laptop {
-      width: 280px;
+      width: 600px;
     }
   }
+}
 
-  @include laptop {
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
+.hello {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+
+  &__link {
+    color: $white;
+    font-size: 20px;
   }
+
+  &__link--line {
+    text-decoration: underline;
+  }
+
+}
+
+.block {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s, opacity 0.5s;
 }

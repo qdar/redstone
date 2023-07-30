@@ -26,9 +26,10 @@ for (i = 0; i < burger.length; i++) {
 
 let scroll = new SmoothScroll('a[href*="#"]', {speed: 400});
 
+
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
+var header = document.querySelector("header");
 var sticky = header.offsetTop;
 
 function myFunction() {
@@ -116,5 +117,29 @@ const swiperIndustries = new Swiper('.industries__slider', {
       },
     },
   },
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let blocks = document.querySelectorAll('.block');
+
+  function checkBlocksVisibility() {
+    let windowHeight = window.innerHeight;
+
+    blocks.forEach(block => {
+    let blockPosition = block.getBoundingClientRect().top;
+      if (blockPosition < windowHeight - 100) {
+        block.style.opacity = "1";
+        block.style.transform = "translateY(0)";
+      }
+    });
+  }
+
+  checkBlocksVisibility();
+  window.addEventListener('scroll', function() {
+    checkBlocksVisibility();
+  });
 
 });

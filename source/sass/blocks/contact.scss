@@ -74,38 +74,4 @@
     color: $accent-color;
     text-decoration: underline;
   }
-
-  &__pdf {
-    color: #8E8E8E;
-    font-size: 16px;
-    text-decoration: underline;
-    display: block;
-    margin-top: 32px;
-    position: relative;
-    padding-left: 36px;
-    transition: $transition;
-
-    @include laptop {
-      margin-top: 40px;
-    }
-  }
-
-  &__pdf:hover {
-    color: $white;
-  }
-
-  &__pdf::before {
-    content: '';
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 0;
-    background-image: url(../img/pdf.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__pdf:hover::before {
-    background-image: url(../img/pdf-hover.svg);
-  }
 }
