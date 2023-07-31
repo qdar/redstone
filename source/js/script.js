@@ -121,25 +121,18 @@ const swiperIndustries = new Swiper('.industries__slider', {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-
-  let blocks = document.querySelectorAll('.block');
-
-  function checkBlocksVisibility() {
-    let windowHeight = window.innerHeight;
-
-    blocks.forEach(block => {
-    let blockPosition = block.getBoundingClientRect().top;
-      if (blockPosition < windowHeight - 100) {
-        block.style.opacity = "1";
-        block.style.transform = "translateY(0)";
-      }
-    });
-  }
-
-  checkBlocksVisibility();
-  window.addEventListener('scroll', function() {
-    checkBlocksVisibility();
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('animation--run');
+    }
   });
+}
 
-});
+let options = {threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}

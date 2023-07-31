@@ -63,6 +63,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     z-index: 1;
+    animation: 2s ease-in 0s fade-in;
 
     @include laptop {
       font-size: 170px;
@@ -79,9 +80,14 @@
     z-index: 0;
   }
 
+  &:nth-child(2) {
+    animation: 3s ease-in 0s fade-in;
+  }
+
   &__item:last-child {
     display: grid;
     justify-content: end;
+    animation: 4s ease-in 0s fade-in;
   }
 
   &__intro {
@@ -90,6 +96,7 @@
     font-weight: 300;
     width: 210px;
     position: relative;
+    animation: 2.5s ease-in 0s fade-in;
 
     @include laptop {
       position: absolute;
@@ -126,6 +133,7 @@
 
   &__button {
     margin-top: 100px;
+    animation: 3s ease-in 0s fade-in;
 
     @include laptop {
       margin-top: 0;
