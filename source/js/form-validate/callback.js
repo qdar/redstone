@@ -33,11 +33,10 @@ const baseSuccessCallback = (event) => {
     }
   }
 
-  let form = document.querySelector('.intouch__form');
-  form.classList.add("success");
+  modals.open("solution-1");
 
-  // const success = document.querySelector('.modal-success');
-  // success.classList.add("is-active");
+  // let form = document.querySelector('.intouch__form');
+  // form.classList.add("success");
 
 };
 
