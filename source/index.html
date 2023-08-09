@@ -21,20 +21,22 @@
   <header class="header">
     <div class="header__container">
       <img class="header__logo" src="img/logo.svg" height="28" alt="red stone">
-      <div class="header__lang">
-        <ul class="clear-list lang">
-          <li class="lang__item">
-            <a class="lang__link">En</a>
-          </li>
-          <li class="lang__item">
-            <a class="lang__link" href="in.html">In</a>
-          </li>
-        </ul>
-      </div>
-      <div class="burger js-burger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="header__buttons">
+        <div class="header__lang">
+          <ul class="clear-list lang">
+            <li class="lang__item">
+              <a class="lang__link">En</a>
+            </li>
+            <li class="lang__item">
+              <a class="lang__link" href="in.html">In</a>
+            </li>
+          </ul>
+        </div>
+        <div class="burger js-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <nav class="header__nav burger__panel navigation">
         <div class="navigation__lang">
@@ -822,21 +824,20 @@
 
     <section class="solutions" id="solutions">
       <div class="solutions__container container">
-        <h2 class="solutions__title animation">Solutions & Services</h2>
-        <div class="solutions__text animation">
-          <div class="left__content">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-          </div>
-          <div class="right__content">
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-          </div>
-        </div>
+        <header class="solutions__header animation">
+          <h2 class="solutions__title">Solutions & Services</h2>
+          <b class="solutions__subtitle">bring your SECURITY MANAGEMENT PROCESS to perfection</b>
+        </header>
+        <ul class="clear-list solutions__list animation">
+          <li class="solutions__item">focus on solutions not on specific brand(s) and assure your cyber RESILIENCE</li>
+          <li class="solutions__item">use risk based approach to secure and optimize & protect your investment</li>
+          <li class="solutions__item">discover the workflow for the optimal cyber security development roadmap</li>
+        </ul>
       </div>
 
       <div class="swiper solutions__slider slider animation">
-        <ul class="clear-list solutions__list swiper-wrapper">
-          <li class="solutions__item slider__item swiper-slide">
+        <ul class="clear-list swiper-wrapper">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -847,7 +848,7 @@
             <p class="solutions__desc">We advise to create AD once you’ve overcome 20 employees. Even if you are not a big company yet we strongly recommend to think of having Active Directory arranged as a digital directory that keeps track of who has access to what.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-1">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -858,7 +859,7 @@
             <p class="solutions__desc">Can be launched decentralized - per user or can have centralized management - to be used per server. These helps to protect both end-points and servers, to resist malware, ransomware and APT threats.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-2">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -869,7 +870,7 @@
             <p class="solutions__desc">Set between Internet and internal networks. Firewall set-up is essentially important and nearly useless without proper policies configured, applied and constantly tracked and updated.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-3">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -880,7 +881,7 @@
             <p class="solutions__desc">The second biggest vulnerability – mail!. This type of protection is a complete emulation of the work station - all traffic is transferred.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-4">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -891,7 +892,7 @@
             <p class="solutions__desc">A mail security gateway is like a security checkpoint for emails. It helps protect organizations from various email-based threats and ensures the safe delivery of messages.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-5">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -902,7 +903,7 @@
             <p class="solutions__desc">Protects companies’ sensitive data against leakage and theft, very flexible set-up, controls all data channels, complete control of users’ behavior, USB ports control, control of any resource - messengers inclusively, allows to see the content of messages/emails etc.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-6">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -913,7 +914,7 @@
             <p class="solutions__desc">WAF security gateway acts as a protective barrier for websites, shielding them from cyber attacks and ensuring the integrity and security of web-based applications.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-7">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -924,7 +925,7 @@
             <p class="solutions__desc">NAC helps organizations maintain a secure and controlled network environment. It ensures that only trusted devices and authorized users can connect, protecting against unauthorized access, potential threats, and the spread of malware.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-8">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -935,7 +936,7 @@
             <p class="solutions__desc">MDM helps organizations keep their mobile devices under control and secure. It simplifies the management of devices, enhances data protection, and ensures that devices are compliant with security policies.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-9">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -946,7 +947,7 @@
             <p class="solutions__desc">The technology is like having a master key for multiple locked doors. It allows to access multiple systems, applications, or websites with just one set of login credentials.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-10">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -957,7 +958,7 @@
             <p class="solutions__desc">MFA adds an extra layer of security by requiring users to provide multiple forms of authentication to access their accounts.</p>
             <button class="solutions__link" type="button" data-open-modal="solution-11">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -968,7 +969,7 @@
             <p class="solutions__desc">SIEM collects data from diverse sources, including firewall logs, antivirus logs, authentication logs, and intrusion detection system logs, among others. </p>
             <button class="solutions__link" type="button" data-open-modal="solution-12">More</button>
           </li>
-          <li class="solutions__item slider__item swiper-slide">
+          <li class="slider__item swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/solution-image-pc.webp 1x, img/solution-image-pc@2x.webp 2x">
               <source type="image/webp" srcset="img/solution-image.webp 1x, img/solution-image@2x.webp 2x">
@@ -1015,7 +1016,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
-                      <img src="img/clients/novi-logo.png" width="80" height="80" alt="Логотип клиента">
+                      <img src="img/credentials/novi-logo.png" width="80" height="80" alt="Логотип клиента">
                       <div class="client__wrapper">
                         <h3 class="client__name">Novikombank</h3>
                         <p class="client__data-text client-hide">Rostech’s bank and subsidiary, 10 000 users</p>
@@ -1082,6 +1083,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo02.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">SMP Bank (the Northern Sea Route serving bank)</h3>
                         <p class="client__data-text client-hide">>10 000 users (end points) Client since 2012</p>
@@ -1145,6 +1147,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo03.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">Sberbank + 200 regionally distributed subsidiaries</h3>
                         <p class="client__data-text client-hide">The biggest bank in Russia serving population (consumer clients) >200 000 users (end points)</p>
@@ -1197,6 +1200,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo04.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">Promsvyaz bank</h3>
                         <p class="client__data-text client-hide">One of the biggest banks in Russia serving the Army and the Ministry of Defense 15 000 users 500 Mbit/sec incoming traffic flow Client since 2015</p>
@@ -1257,6 +1261,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo05.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">Tele2</h3>
                         <p class="client__data-text client-hide">TOP4 mobile telecom providers Client since 2012</p>
@@ -1304,6 +1309,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo06.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">Megafon</h3>
                         <p class="client__data-text client-hide">One of the TOP 3 mobile operators in Russia 36 000+ employees</p>
@@ -1350,6 +1356,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo07.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">VSMPO AVISMA</h3>
                         <p class="client__data-text client-hide">World leader of titanium production 20 000+ employees</p>
@@ -1412,6 +1419,7 @@
                 <div class="client__company">
                   <div class="client__data">
                     <div class="client__logotype">
+                      <!-- <img src="img/credentials/logo08.png" width="80" height="80" alt="Логотип клиента"> -->
                       <div class="client__wrapper">
                         <h3 class="client__name">Capital Group</h3>
                         <p class="client__data-text client-hide">One of the TOP3 developers in Russia and CIS</p>
@@ -1534,14 +1542,14 @@
       <div class="container intouch__container">
         <h2 class="intouch__title animation">Get in touch</h2>
         <div data-form-validate="data-form-validate" data-callback="base">
-        <form class="intouch__form animation" id="form-touch" action="order.php" method="POST">
+        <form class="intouch__form animation" id="user" action="order.php" method="POST">
           <fieldset class="intouch__inputs">
             <div class="intouch__inputs-group">
               <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
                 <input class="intouch__input input" type="text" name="your-name" id="your-name" placeholder="Your name" required>
               </div>
               <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="The field must be filled in" data-message-extra="Check the correctness of filling in the field" data-required="data-required">
-                <input class="intouch__input input" type="tel" name="your-phone" id="your-phone" placeholder="+7 000 000 000" required>
+                <input class="intouch__input input" type="tel" name="your-phone" id="your-phone" placeholder="+62 000 000 000 00" required>
               </div>
               <div class="custom-input" data-validate-type="email" data-message-base="The field must be filled in" data-required="data-required">
                 <input class="intouch__input input" type="email" name="your-email" id="your-email" placeholder="E-mail" required>
@@ -1590,6 +1598,23 @@
     </div>
   </footer>
 
+  <section class="modal modal--preload" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section class="solutions__modal-text">
+          <h2 class="solutions__modal-title">Your message has been sent</h2>
+          <p>We will reply to you as soon as possible</p>
+        </section>
+        <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <button class="modal__close button button--secondary" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
 
   <section class="modal modal--preload" data-modal="solution-1">
     <div class="modal__wrapper">
@@ -1869,7 +1894,7 @@
           <article class="client__article client__article--modal">
             <div class="client__company">
               <div class="client__data">
-                <img src="img/clients/novi-logo-black.png" width="80" height="80" alt="Логотип клиента">
+                <img src="img/credentials/logo01.png" width="80" height="80" alt="Логотип клиента">
                 <h3 class="client__name">Novikombank</h3>
                 <p class="client__data-text">Rostech’s bank and subsidiary, 10 000 users</p>
                 <span class="client__label">Banking</span>
@@ -2349,6 +2374,8 @@
       </div>
     </div>
   </section>
+
+
 
   <script src="js/swiper-bundle.min.js"></script>
   <script type="module" src="js/module-tabs.js"></script>

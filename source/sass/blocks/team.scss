@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
 
-  @include laptop {
+  @include tablet {
     grid-template-columns: repeat(4, 1fr);
     overflow: inherit;
     margin-top: 120px;
@@ -16,7 +16,7 @@
     content: 'Team';
     color: $white;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 148px;
     position: absolute;
     left: 0;
@@ -37,7 +37,7 @@
     }
   }
 
-  @include mobile-tablet-only {
+  @include mobile-only {
     &__item:first-child,
     &__item:nth-child(2) {
       color: $white;
@@ -46,7 +46,7 @@
 
   &__name {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;

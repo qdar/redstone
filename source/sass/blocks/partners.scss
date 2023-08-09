@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: center;
 
-    @include laptop {
+    @include tablet {
       width: 256px!important;
     }
   }

@@ -1,18 +1,6 @@
 const baseSuccessCallback = (event) => {
   event.preventDefault();
 
-  // fetch(document.forms.user.action, {
-  //   method: 'POST',
-  //   body: JSON.stringify(new FormData(document.forms.user)),
-  //   headers: {
-  //     'Content-type': 'application/json; charset=UTF-8',
-  //   },
-  // })
-  // .then((response) => response.json())
-  // .then((data) => {
-  //   console.log(data)
-  // })
-
   let response = fetch(document.forms.user.action, {
     method: 'post',
     body: new FormData(document.forms.user)
@@ -33,10 +21,7 @@ const baseSuccessCallback = (event) => {
     }
   }
 
-  modals.open("solution-1");
-
-  // let form = document.querySelector('.intouch__form');
-  // form.classList.add("success");
+  modals.open("success");
 
 };
 

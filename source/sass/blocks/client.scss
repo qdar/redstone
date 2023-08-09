@@ -91,7 +91,7 @@
   &__subheading {
     color: $white;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 30px;
 
     @include laptop {
@@ -128,7 +128,11 @@
   &__logotype {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
+
+    @include laptop {
+      align-items: flex-start;
+    }
   }
 
   &__article--modal {

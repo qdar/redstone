@@ -1,7 +1,6 @@
 let burger  = document.querySelectorAll('.js-burger');
 let menu    = document.querySelector('.burger__panel');
 let burgerButton  = document.querySelector('.burger')
-
 let i;
 for (i = 0; i < burger.length; i++) {
   burger[i].onclick = function() {
@@ -10,21 +9,10 @@ for (i = 0; i < burger.length; i++) {
   }
 };
 
-// const anchors = document.querySelectorAll('a[href*="#"]')
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
 
-//     const blockID = anchor.getAttribute('href').substr(1)
-
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start'
-//     })
-//   })
-// }
-
-let scroll = new SmoothScroll('a[href*="#"]', {speed: 400});
+let scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 400
+});
 
 
 window.onscroll = function() {myFunction()};
@@ -41,10 +29,8 @@ function myFunction() {
 }
 
 const swiper = new Swiper('.partners__slider', {
-  // loop: true,
   slidesPerView: 1,
   spaceBetween: 15,
-  // centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -54,7 +40,11 @@ const swiper = new Swiper('.partners__slider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    1024: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    1280: {
       slidesPerView: 5,
       spaceBetween: 60,
     },
@@ -73,6 +63,9 @@ const swiperSolutions = new Swiper('.solutions__slider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -91,10 +84,19 @@ const swiperCredentials = new Swiper('.credentials__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1280: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+  },
 });
 
 const swiperIndustries = new Swiper('.industries__slider', {
-
   slidesPerView: 1,
   spaceBetween: 20,
   slidesPerColumnFill: 'row',
@@ -109,7 +111,13 @@ const swiperIndustries = new Swiper('.industries__slider', {
   },
 
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
     1024: {
+      slidesPerView: 3,
+    },
+    1360: {
       slidesPerView: 2,
       spaceBetween: 0,
       grid: {
