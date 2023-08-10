@@ -31,10 +31,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @include tablet {
-      width: 256px!important;
-    }
   }
 
   &__navigation {
