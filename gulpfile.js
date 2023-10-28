@@ -153,7 +153,7 @@ createWebp
 export default gulp.series(
 clean,
 copy,
-copyImages,
+// copyImages,
 gulp.parallel(
 styles,
 html,
